@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    height:100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+header {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;;
+    background-color: #cecece;
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+button {
+    cursor: pointer;
+}
+
+.container {
+    width: 1200px;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-shrink: 0;
+    padding-bottom: 30px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 70%;
+}
+
+thead {
+    text-align: center;
+    background-color: #e5e8e8;
+}
+
+thead > tr {
+    font-size: 1.2rem;
+}
+
+tbody {
+    text-align: center;
+}
+
+tr > td {
+    padding: 10px;
+}
+
+tr {
+    border-bottom: 2px dotted #e5e8e8;
+    
+}
+
+td > button {
+    border-style: none;
+    font-size: 1rem;
+    padding: 1rem 1.3rem;
+    border-radius: 10px;
+    color: whitesmoke;
+}
+
+td:nth-last-child(2) > button {
+    background-color: white;
+    border: 1px solid #bbb;
+    color: black;
+}
+
+td:last-child > button {
+    background-color:  #c0392b;
+}
+
+body > button {
+    width: 3.5rem;
+    height: 3.5rem;
+    font-size: 2rem;
+    border-style: none;
+    border-radius: 10px;
+    padding-bottom: 4px;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: #dadada;
+    margin: 15% auto; /* 15% from the top and centered */
+    border: 1px solid #888;
+    width: 300px; /* Could be more or less, depending on screen size */
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    position: relative;
+    gap: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 1.2rem;
+}
+
+div > h2 {
+    align-self: center;
+}
+
+.close {
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    cursor: pointer;
+    font-size:1.2rem;
+}
+
+.close:hover {
+    transform: scale(1.1);
+}
+
+form > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    gap: 5px;
+}
+
+div > input {
+    border-radius: 7px;
+    border-style: none;
+    font-size: 1.5rem;
+    padding: 3px;
+}
+
+form > div:nth-last-child(2) {
+    align-self: center;
+}
+
+#read {
+    height: 20px;
+    width: 20px;
+}
+
+form > button {
+    align-self: center;
+    width: 80%;
+    padding: 5px 0;
+    font-size: 1.3rem;
+}
+
+form > div {
+    align-self: center;
+}
+
+input {
+    width: 100%;
+    text-align: center;
+}

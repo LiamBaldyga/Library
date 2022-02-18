@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>Library</h1>
+        </div>
+    </header>
+    
+    <button type="button" id="add-book">+</button>
+    <div class="modal">
+        <div class="modal-content" id="modal-content">
+            <h2>Add Book</h2>
+            <div class="close">&#10006;</div>
+            <form action="" method="post" id="AddBook">
+                <div>
+                    <label for="title">Book Title:</label>
+                    <input type="text" id="title" name="title" required>
+                </div>
+                <div>
+                    <label for="author">Author:</label>
+                    <input type="text" id="author" name="author" required>
+                </div>
+                <div>
+                    <label for="pages">Number of Pages:</label>
+                    <input type="number" id="pages" name="pages" min="0" required>
+                </div>
+                <div>
+                    <label for="read">Have you read it?:</label>
+                    <input type="checkbox" id="read" name="read">
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    <div class="container">
+
+        <table id="book-table">
+            <thead id="table-head">
+                <tr>
+                    <td>Title</td>
+                    <td>Author</td>
+                    <td>Pages</td>
+                    <td>Read Status</td>
+                    <td>Remove</td>
+                </tr>
+            </thead>
+            <tbody id="table-body">
+            </tbody>
+        </table>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
